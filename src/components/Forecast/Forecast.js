@@ -3,8 +3,8 @@ import {
   AccordionItem,
   AccordionItemButton,
   AccordionItemHeading,
-  AccordionItemPanel,
-} from "react-accessible-accordion";
+  AccordionItemPanel,//içerik burada 
+} from "react-accessible-accordion";//css accordion menu gibi react package
 import "./Forecast.css";
 
 const WEEK_DAYS = [
@@ -44,14 +44,13 @@ const Forecast = (props) => {
                     {item.weather[0].description}
                   </label>
                   <label className="min-max">
-                    {Math.round(item.main.temp_min) /
-                      Math.round(item.main.temp_max)}
+                  {Math.round(item.main.temp_max)}°C /{Math.round(item.main.temp_min)}°C
                   </label>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-            <div className="daily-details-grid">
+              <div className="daily-details-grid">
                 <div className="daily-details-grid-item">
                   <label>Pressure:</label>
                   <label>{item.main.pressure}</label>
