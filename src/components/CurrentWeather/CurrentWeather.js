@@ -1,5 +1,6 @@
 import "./CurrentWeather.css";
 const CurrentWeather = (props) => {
+
   return (
     <div className="weather">
       <div className="weather-top">
