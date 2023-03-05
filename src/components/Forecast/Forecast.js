@@ -23,8 +23,6 @@ const Forecast = (props) => {
     WEEK_DAYS.slice(0, dayinInAWeek)
   );
 
-  console.log(forecastDays);
-
   return (
     <>
       <label className="title">Daily</label>
